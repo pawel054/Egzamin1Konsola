@@ -39,5 +39,17 @@
                 }
             }
         }
+
+        private static void DisplayData(List<AlbumObject> albumObjects)
+        {
+            foreach(AlbumObject albumObject in albumObjects)
+            {
+                Console.WriteLine($"{albumObject.Artist}");
+                Console.WriteLine($"{albumObject.Album}");
+                Console.WriteLine($"{albumObject.SongsNumber}");
+                Console.WriteLine($"{albumObject.Year}");
+                Console.WriteLine($"{albumObject.DownloadNumber}\n");
+            }
+        }
     }
 }
