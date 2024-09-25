@@ -11,7 +11,17 @@ namespace Konsola
         public string Artist { get; set; }
         public string Album { get; set; }
         public int SongsNumber {  get; set; }
-        public DateTime Year { get; set; }
+        public int Year { get; set; }
         public int DownloadNumber {  get; set; }
+
+        public AlbumObject() { }
+        public AlbumObject(string artist, string album, int songsNumber, int year, int downloadNumber)
+        {
+            Artist = artist;
+            Album = album;
+            SongsNumber = songsNumber;
+            Year = year;
+            DownloadNumber = downloadNumber;
+        }
     }
 }
